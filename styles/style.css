@@ -49,9 +49,6 @@ ol {
   text-transform: uppercase;
 }
 
-::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
 
 .result {
   display: flex;
@@ -124,8 +121,11 @@ ol {
   background: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  outline: none;
   appearance: none;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__checkbox-list {
@@ -283,6 +283,7 @@ button:hover {
   text-decoration: none;
   display: block;
   color: #fff;
+  margin: 2px;
 }
 
 .content__card-link:active {
@@ -301,7 +302,6 @@ button:hover {
   background: #545050;
 }
 
-.content__card-link:hover .content__video-card-title,
-.content__card-link:hover .content__video-card-description {
+.content__card-link:hover  {
   text-decoration: underline;
 }
